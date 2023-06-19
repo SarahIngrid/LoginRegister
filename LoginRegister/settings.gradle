@@ -1,0 +1,41 @@
+pluginManagement {
+    repositories {
+       // gradlePluginPortal()
+       // google()
+       // mavenCentral()
+
+        maven {
+            allowInsecureProtocol=true
+            url 'http://repoandroid:8081/repository/maven-public'
+            credentials {
+                username 'android'
+                password '123456'
+            }
+
+        }
+
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+      //  google()
+     //   mavenCentral()
+
+        maven {
+            allowInsecureProtocol=true
+            url 'http://repoandroid:8081/repository/maven-public'
+            credentials {
+                username 'android'
+                password '123456'
+            }
+
+        }
+
+
+
+    }
+}
+rootProject.name = "Login Register"
+include ':app'
